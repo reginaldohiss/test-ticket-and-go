@@ -1,0 +1,17 @@
+
+#Lista de programadores candidatos.
+# Tipos: 
+#
+# FUNCIONARIO_MOTIVADO -> m
+# FUNCIONARIO_ESPERTO -> e
+# FUNCIONARIO_HONESTO -> h
+# FUNCIONARIO_DESONESTO -> d
+# FUNCIONARIO_PREGUICOSO -> p
+# FUNCIONARIO_COOPERATIVO -> c
+
+1	Francinaldo de Maio	e
+2	Brenda Washington	c
+3	Ramaiara Nuvens	e
+4	Zé dos Côcos	c
+5	Francinaldo de Maio	p
+5	Francinaldo de Maio	p
