@@ -19,12 +19,16 @@
     $pagina = new Pagina('página 2 - Funcionário');
     $htmlConteudo = '<table>';
     $htmlConteudo .= '<tr>';
+    $htmlConteudo .= '<th>ID</th>';
     $htmlConteudo .= '<th>Nome</th>';
     $htmlConteudo .= '<th>Tipo</th>';
+    $htmlConteudo .= '<th>Ação</th>';
     $htmlConteudo .= '<tr>';
     $htmlConteudo .= '<tr>';
+    $htmlConteudo .= '<td>'.$_GET['id'].'</td>';
     $htmlConteudo .= '<td>'.$detalhes->nome.'</td>';
     $htmlConteudo .= '<td>'.$nomeTipo.'</td>';
+    $htmlConteudo .= '<td><a href="index.php">Voltar</a></td>';
     $htmlConteudo .= '</tr>';
     $htmlConteudo .= '</table>';
     $pagina->setNomeUsuario(strtoupper($_SESSION['nome']));
