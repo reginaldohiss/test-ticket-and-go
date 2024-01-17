@@ -1,4 +1,5 @@
 <?php
+    session_start();
 
     /**
     *Mostra todos os dados do funcionário de acordo com o id recebido por get.
@@ -26,5 +27,6 @@
     $htmlConteudo .= '<td>'.$nomeTipo.'</td>';
     $htmlConteudo .= '</tr>';
     $htmlConteudo .= '</table>';
+    $pagina->setNomeUsuario(strtoupper($_SESSION['nome']));
     $pagina->setConteudo($htmlConteudo);
     $pagina->mostrar();

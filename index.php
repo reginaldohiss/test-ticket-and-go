@@ -39,6 +39,7 @@
     }
 
     $pagina = new Pagina('Página 1 - Lista de Funcionários Disponíveis');
+    $pagina->setNomeUsuario(strtoupper($_SESSION['nome']));
     $pagina->setConteudo($htmlConteudo);
     $pagina->mostrar();
 
@@ -51,6 +52,7 @@
     }
 
     $pagina = new Pagina('Página 1 - Lista de Funcionários Ticker And Go');
+    $pagina->setNomeUsuario(strtoupper($_SESSION['nome']));
     $pagina->setConteudo($htmlConteudoTicket);
     $pagina->mostrar();
 
@@ -66,6 +68,7 @@
     $htmlConteudoPorcentagem .= '<br>';
 
     $pagina = new Pagina('Página 1 - Lista de Porcentagem por Tipo');
+    $pagina->setNomeUsuario(strtoupper($_SESSION['nome']));
     $pagina->setConteudo($htmlConteudoPorcentagem);
     $pagina->mostrar();
 
